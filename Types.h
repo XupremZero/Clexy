@@ -1,17 +1,20 @@
 #pragma once
 #include <omp.h>
+#include <stdint.h>
+
 #define Temp template<class T>
 #define ns namespace
+
 typedef void Void;
 typedef bool Bit;
-typedef unsigned char UByte;
-typedef signed char Byte;
-typedef unsigned short UShort;
-typedef signed short Short;
-typedef unsigned int UInt;
-typedef signed int Int;
-typedef unsigned long int UBig;
-typedef signed long int Big;
+typedef uint8_t UByte;
+typedef int8_t Byte;
+typedef uint16_t UShort;
+typedef int16_t Short;
+typedef uint32_t UInt;
+typedef int32_t Int;
+typedef uint64_t UBig;
+typedef int64_t Big;
 typedef float Single;
 typedef double Double;
 typedef long double Quad;
