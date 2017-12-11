@@ -1,6 +1,7 @@
 #pragma once
 #include <omp.h>
 #define Temp template<class T>
+#define ns namespace
 typedef void Void;
 typedef bool Bit;
 typedef unsigned char UByte;
