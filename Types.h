@@ -1,3 +1,4 @@
+//Copyright 2018 Samuel Alonso, All Rights Reserved
 #pragma once
 #include <omp.h>
 #include <stdint.h>
