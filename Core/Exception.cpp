@@ -3,10 +3,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-Void Clexy::Launch(const Severity s, const char* msg)
+Void Clexy::Launch(const char* msg)
 {
-	FILE* fff = fopen(LogPath, "w");
+	FILE* fff = fopen("C:\\Clexy\\Logger", "w");
 	fwrite(msg, 1, 300, fff);
+	fwrite("\n", 1, 1, fff);
 	fclose(fff);
 	exit(0);
 }
