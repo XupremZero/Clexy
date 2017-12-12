@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 #ifdef ClexyDebug
-Void Log(const Severity s, const Byte* msg)
+Void Log(const Severity s, const Byte* msg, const Bit Continue)
 {
 	FILE* fff = fopen("C:\\Clexy\\Logger", "w");
 	switch (s)
@@ -20,7 +20,8 @@ Void Log(const Severity s, const Byte* msg)
 		fwrite(wmsg, 1, 6, fff);
 		fwrite(msg, 1, 300, fff);
 		fwrite("\n", 1, 1, fff);
-		exit(0);
+		if(!Continue)
+			exit(0);
 		break;
 	case Severity::Error:
 		Byte * emsg = "Error: ";

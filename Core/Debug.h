@@ -8,7 +8,7 @@ enum Severity : unsigned char
 
 #ifdef ClexyDebug
 #include <Clexy\Types.h>
-Void Log(const Severity, const Byte*);
+Void Log(const Severity, const Byte*, const Bit);
 #else
-#define Log(x, y)
+#define Log(x, y, z)
 #endif
