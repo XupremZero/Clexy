@@ -10,5 +10,5 @@ enum Severity : unsigned char
 #include <Clexy\Types.h>
 Void Log(const Severity, const Byte*);
 #else
-#define Log(x, y, z)
+#define Log(x, y)
 #endif
