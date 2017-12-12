@@ -8,5 +8,5 @@ Void Clexy::Launch(const Severity s, const char* msg)
 	FILE* fff = fopen(LogPath, "w");
 	fwrite(msg, 1, 300, fff);
 	fclose(fff);
-	abort();
+	exit(0);
 }
