@@ -9,5 +9,5 @@ Void Clexy::Launch(const char* msg)
 	fwrite(msg, 1, 300, fff);
 	fwrite("\n", 1, 1, fff);
 	fclose(fff);
-	exit(0);
+	abort();
 }
