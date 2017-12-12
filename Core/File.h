@@ -7,16 +7,16 @@ ns Clexy
 	class File
 	{
 	private:
-		char* dir;
+		Byte* dir;
 	public:
-		File(char*);
+		File(const Byte*);
 
-		Byte* Read();
+		Byte* Read() const;
 
-		Void Write(const char*);
+		Void Write(const Byte*) const;
 
-		Void Rename(char*);
+		Void Rename(const Byte*);
 
-		Void Remove();
+		Void Remove(Void);
 	};
 }
