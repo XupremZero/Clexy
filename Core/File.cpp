@@ -1,5 +1,5 @@
+//Copyright 2018 Samuel Alonso, All Rights Reserved
 #include <Clexy\Core\File.h>
-#include <Clexy\Core\Exception.h>
 #include <stdio.h>
 
 Clexy::File::File(char* Direction)
