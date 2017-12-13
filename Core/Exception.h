@@ -4,5 +4,6 @@
 
 ns Clexy
 {
-	Void Launch(const char*);
+	//Write an exception info onto a log file based on the argument.
+	Void Launch(const Word);
 }

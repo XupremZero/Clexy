@@ -1,4 +1,3 @@
-//Copyright 2018 Samuel Alonso, All Rights Reserved
 #pragma once
 #include <Clexy\Types.h>
 
@@ -7,16 +6,21 @@ ns Clexy
 	class File
 	{
 	private:
-		Byte* dir;
+		Word FilePath;
 	public:
-		File(const Byte*);
+		//Save file path based on the argument. Create the file if it doesn't exist.
+		File(const Word);
 
-		Byte* Read() const;
+		//Read whole file and return its content.
+		Word Read() const;
 
-		Void Write(const Byte*) const;
+		//Write the content based on the argument, into the end of the file.
+		Void Write(const Word) const;
 
-		Void Rename(const Byte*);
+		//Change file path based on the argument.
+		Void Rename(const Word);
 
-		Void Remove(Void);
+		//Delete file and set file path to nullptr.
+		Void Remove();
 	};
 }
