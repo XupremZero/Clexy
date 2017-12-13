@@ -16,8 +16,6 @@ typedef void Void;
 typedef bool Bit;
 typedef uint8_t UByte;
 typedef int8_t Byte;
-typedef Byte Letter;
-typedef Letter* Word;
 typedef uint16_t UShort;
 typedef int16_t Short;
 typedef uint32_t UInt;
