@@ -6,19 +6,19 @@ ns Clexy
 	class File
 	{
 	private:
-		Word FilePath;
+		Byte* FilePath;
 	public:
 		//Save file path based on the argument. Create the file if it doesn't exist.
-		File(const Word);
+		File(const Byte*);
 
 		//Read whole file and return its content.
-		Word Read() const;
+		Byte* Read() const;
 
 		//Write the content based on the argument, into the end of the file.
-		Void Write(const Word) const;
+		Void Write(const Byte*) const;
 
 		//Change file path based on the argument.
-		Void Rename(const Word);
+		Void Rename(const Byte*);
 
 		//Delete file and set file path to nullptr.
 		Void Remove();
