@@ -1,6 +1,10 @@
 //Copyright 2018 Samuel Alonso, All Rights Reserved
 #pragma once
-
+#ifdef _MSC_VER
+#define IL __forceinline
+#else
+#define IL inline __attribute__((always_inline))
+#endif
 #include <omp.h>
 #include <stdint.h>
 #define Temp template<class T>
